@@ -1,0 +1,151 @@
+ <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo"><img class="sorobon-logo" src="sorobon.png" /></div>
+            <ul class="nav-links">
+                <li><a >Home</a></li>
+                <li><a >Courses</a></li>
+                <li><a >About</a></li>
+                <li><a class="cta-btn">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Be sharp. Be the top.</h1>
+            <p>Master in-demand skills with expert-led courses designed for real-world success. Join thousands of students advancing their careers.</p>
+            <a href="#courses" class="hero-btn">Explore Our Courses</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Why Choose Sorobon?</h2>
+        <p class="section-subtitle">Experience learning that adapts to your goals and schedule</p>
+        <div class="features">
+            <div class="feature-card" id="instructor-feature-card" (click)="showCard('instructor')">
+                <div class="feature-icon">🎯</div>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with years of real-world experience in their fields.</p>
+            </div>
+            <div class="feature-card" id="flexible-learning-card" (click)="showCard('flexibleLearningCard')">
+                <div class="feature-icon">⚡</div>
+                <h3>Flexible Learning</h3>
+                <p>Study at your own pace with lifetime access to course materials and resources.</p>
+            </div>
+            <div class="feature-card" id="certification-feature-card" (click)="showCard('certification')">
+                <div class="feature-icon">🏆</div>
+                <h3>Certification</h3>
+                <p>Earn recognized certificates upon completion to boost your professional credentials.</p>
+            </div>
+            <div class="feature-card" id="franchise-feature-card" (click)="showCard('franchise')">
+                <div class="feature-icon">💼</div>
+                <h3>Franchise</h3>
+                <p>Get personalized franchise to grow and spread knowledge.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section courses" id="courses">
+        <h2 class="section-title">Popular Courses</h2>
+        <p class="section-subtitle">Start your learning journey with our most sought-after programs</p>
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-img">💻</div>
+                <div class="course-content">
+                    <h3>Full Stack Web Development</h3>
+                    <div class="course-meta">
+                        <span>⏱️ 12 weeks</span>
+                        <span>👥 2,450 students</span>
+                    </div>
+                    <p>Master front-end and back-end technologies including React, Node.js, and databases to build complete web applications.</p>
+                    <a href="#" class="enroll-btn">Enroll Now →</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-img">📊</div>
+                <div class="course-content">
+                    <h3>Data Science & Analytics</h3>
+                    <div class="course-meta">
+                        <span>⏱️ 16 weeks</span>
+                        <span>👥 1,890 students</span>
+                    </div>
+                    <p>Learn Python, machine learning, and statistical analysis to extract insights from complex data sets.</p>
+                    <a href="#" class="enroll-btn">Enroll Now →</a>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-img">🎨</div>
+                <div class="course-content">
+                    <h3>UI/UX Design Mastery</h3>
+                    <div class="course-meta">
+                        <span>⏱️ 10 weeks</span>
+                        <span>👥 1,670 students</span>
+                    </div>
+                    <p>Create stunning user interfaces and experiences using Figma, Adobe XD, and industry-standard design principles.</p>
+                    <a href="#" class="enroll-btn">Enroll Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>10,000+</h3>
+                <p>Active Students</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Expert Instructors</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>Success Rate</p>
+            </div>
+            <div class="stat-item">
+                <h3>200+</h3>
+                <p>Courses Available</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials">
+        <h2 class="section-title">Student Success Stories</h2>
+        <p class="section-subtitle">Hear from learners who transformed their careers</p>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Sorobon's Full Stack course completely changed my career trajectory. Within 3 months of completing the program, I landed my dream job as a developer."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SK</div>
+                    <div class="author-info">
+                        <h4>Sarah Kim</h4>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"The instructors are incredibly knowledgeable and supportive. The hands-on projects gave me the confidence to transition into data science."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MP</div>
+                    <div class="author-info">
+                        <h4>Michael Patel</h4>
+                        <p>Data Analyst</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Best investment in my professional development. The UI/UX course was comprehensive, practical, and immediately applicable to my work."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">EJ</div>
+                    <div class="author-info">
+                        <h4>Emily Johnson</h4>
+                        <p>UX Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Sorobon Academy. Empowering learners worldwide.</p>
+    </footer>
