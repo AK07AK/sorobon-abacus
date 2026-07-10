@@ -21,28 +21,52 @@
     <section class="section">
         <h2 class="section-title">Why Choose Sorobon?</h2>
         <p class="section-subtitle">Experience learning that adapts to your goals and schedule</p>
-        <div class="features">
-            <div class="feature-card" id="instructor-feature-card" (click)="showCard('instructor')">
-                <div class="feature-icon">🎯</div>
-                <h3>Expert Instructors</h3>
-                <p>Learn from industry professionals with years of real-world experience in their fields.</p>
-            </div>
-            <div class="feature-card" id="flexible-learning-card" (click)="showCard('flexibleLearningCard')">
+        <div class="features" >
+            <div style="cursor: pointer;" class="feature-card" id="flexible-learning-card" (click)="showCard('Flexible Learning')">
                 <div class="feature-icon">⚡</div>
                 <h3>Flexible Learning</h3>
                 <p>Study at your own pace with lifetime access to course materials and resources.</p>
             </div>
-            <div class="feature-card" id="certification-feature-card" (click)="showCard('certification')">
+            <div style="cursor: pointer;" class="feature-card" id="certification-feature-card" (click)="showCard('Certification')">
                 <div class="feature-icon">🏆</div>
                 <h3>Certification</h3>
                 <p>Earn recognized certificates upon completion to boost your professional credentials.</p>
             </div>
-            <div class="feature-card" id="franchise-feature-card" (click)="showCard('franchise')">
+            <div  style="cursor: pointer;" class="feature-card" id="franchise-feature-card" (click)="showCard('Franchise ')" >
                 <div class="feature-icon">💼</div>
                 <h3>Franchise</h3>
                 <p>Get personalized franchise to grow and spread knowledge.</p>
             </div>
         </div>
+         <div class="backdrop" id="backdrop" (click)="handleBackdropClick($event)">
+    <div class="modal-stage">
+      <div class="modal" id="modal">
+ 
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title">{{modalTitle}}</h2>
+          </div>
+          <button class="close-btn" (click)="closeModal()">✕</button>
+        </div>
+ 
+        <div class="divider"></div>
+ 
+        <div class="modal-body">
+          <p>
+            There is a kind of knowledge that arrives not through effort,
+            but through <em>stillness</em> — the slow accumulation of mornings
+            spent watching light move across a wall, the weight of a sentence
+            read twice over because the first time wasn't enough.
+          </p>
+          <p>
+            This modal turned to face you. That is all it knows how to do.
+            Some things only reveal themselves when they are given permission
+            to <em>rotate</em> into view.
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
     </section>
 
     <section class="section courses" id="courses">
@@ -74,6 +98,18 @@
                 </div>
             </div>
             <div class="course-card">
+                <div class="course-img">🎨</div>
+                <div class="course-content">
+                    <h3>UI/UX Design Mastery</h3>
+                    <div class="course-meta">
+                        <span>⏱️ 10 weeks</span>
+                        <span>👥 1,670 students</span>
+                    </div>
+                    <p>Create stunning user interfaces and experiences using Figma, Adobe XD, and industry-standard design principles.</p>
+                    <a href="#" class="enroll-btn">Enroll Now →</a>
+                </div>
+            </div>
+              <div class="course-card">
                 <div class="course-img">🎨</div>
                 <div class="course-content">
                     <h3>UI/UX Design Mastery</h3>

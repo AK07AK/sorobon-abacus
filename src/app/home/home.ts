@@ -7,9 +7,22 @@ import { Component } from '@angular/core';
   styleUrl: './home.css',
 })
 export class HOme {
+  modalTitle:string='';
 
   showCard(cardName:string){
-    alert(cardName);
+    this.modalTitle=cardName;
+    this.openModal()
   }
+
+  openModal() {
+      document.getElementById('backdrop')!.classList.add('active');
+  }
+  closeModal() {
+      document.getElementById('backdrop')!.classList.remove('active');
+  }
+  handleBackdropClick(e:any) {
+      if (e.target === document.getElementById('backdrop')) 
+        this.closeModal();
+    }  
 
 }
