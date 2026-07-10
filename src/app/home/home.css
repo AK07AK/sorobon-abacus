@@ -38,6 +38,7 @@
         .nav-links a {
             color: white;
             text-decoration: none;
+            cursor: pointer;
             transition: opacity 0.3s;
         }
 
