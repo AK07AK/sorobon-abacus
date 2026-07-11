@@ -3,7 +3,7 @@ name: sorobon-frontend
 on:
   push:
     branches:
-      - main
+      - ak
 jobs:
   build:
     runs-on: ubuntu-latest
