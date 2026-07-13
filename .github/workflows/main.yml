@@ -34,7 +34,6 @@ jobs:
           host: ${{secrets.VM_HOST}}
           username: ${{secrets.VM_USER}}
           key: ${{secrets.VM_SSH_KEY}}
-          passphrase: ${{secrets.VM_PASS_PHRASE}}
           script: |
             docker pull ${{secrets.DOCKER_USERNAME}}/sorobon-frontend:${{github.sha}}
              docker stop angular-app || true
